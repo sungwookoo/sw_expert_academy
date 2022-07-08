@@ -1,4 +1,4 @@
-﻿package d2019;
+﻿package D1.d1545;
 
 /////////////////////////////////////////////////////////////////////////////////////////////
 // 기본 제공코드는 임의 수정해도 관계 없습니다. 단, 입출력 포맷 주의
@@ -34,15 +34,13 @@ class Solution {
         try (Scanner sc = new Scanner(System.in)) {
             int T;
             T = sc.nextInt();
-            int result = 1;
-            System.out.print(1 + " ");
-            for (int i = 1; i <= T; i++) {
-                result = result * 2;
-                if (i == T) {
-                    System.out.print(result);
-                    break;
-                }
-                System.out.print(result + " ");
+
+            for (int test_case = 0; test_case <= T; test_case++) {
+                if (test_case < T)
+                    System.out.print(T - (test_case) + " ");
+                else
+                    System.out.print(T - (test_case));
+
             }
         }
     }
